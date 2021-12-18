@@ -1,3 +1,7 @@
+/target/
+.classpath
+.target
+
 # Compiled class file
 *.class
 
