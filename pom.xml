@@ -18,12 +18,19 @@
 		<java.version>1.8</java.version>
 	</properties>
 	
-  <repositories>
+  <distributionManagement>
     <repository>
-      <id>maven-public</id>
-      <url>http://localhost:8081/repository/maven-public/</url>
+      <id>nexus</id>
+      <name>Nexus Releases</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
-  </repositories>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Nexus Snapshot</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+   
+  </distributionManagement>
   
 	<dependencies>
 		<dependency>
